@@ -3,7 +3,6 @@ import { Container, Stack } from "@mui/material";
 import { NextPage } from "next";
 
 const PropertyList: NextPage = () => {
-  console.log("PROPERT LIST COMPONENT _ PAGES ROUTER");
   return <Container>PROPERTY LIST</Container>;
 };
 
