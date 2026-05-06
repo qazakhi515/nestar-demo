@@ -4,7 +4,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import PopularPropertyCard from "./PopularPropertyCard";
 import Link from "next/link";
 
-const PopularProperties = ({ initialInput, ...props }: any) => {
+const PopularProperties = ({
+  initialInput = [1, 2, 3, 4, 5, 6, 7],
+  ...props
+}: any) => {
   const [popularProperties, setPopularProperties] =
     useState<number[]>(initialInput);
 
@@ -50,10 +53,6 @@ const PopularProperties = ({ initialInput, ...props }: any) => {
       </Stack>
     </Stack>
   );
-};
-
-PopularProperties.defaultProps = {
-  initialInput: [1, 2, 3, 4, 5, 6, 7],
 };
 
 export default PopularProperties;
