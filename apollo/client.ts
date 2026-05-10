@@ -1,14 +1,14 @@
-// import { ApolloClient, InMemoryCache, createHttpLink } from "@apollo/client";
+import { ApolloClient, InMemoryCache, createHttpLink } from "@apollo/client";
 
-// // No Subscription required for develop process
+// No Subscription required for develop process
 
-// const httpLink = createHttpLink({
-//   uri: "http://localhost:3007/graphql",
-// });
+const httpLink = createHttpLink({
+  uri: "http://localhost:3007/graphql",
+});
 
-// const client = new ApolloClient({
-//   link: httpLink,
-//   cache: new InMemoryCache(),
-// });
+const client = new ApolloClient({
+  link: httpLink,
+  cache: new InMemoryCache(),
+});
 
-// export default client;
+export default client;
